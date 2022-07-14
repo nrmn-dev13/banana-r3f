@@ -8,7 +8,7 @@ function Model({ index, z, speed }) {
   const ref = useRef();
   const { viewport, camera } = useThree();
   const { width, height } = viewport.getCurrentViewport(camera, [0, 0, -z]);
-  const { nodes, materials } = useGLTF("/banana-transformed.glb");
+  const { nodes, materials } = useGLTF("/banana-v1-transformed.glb");
 
   const [data] = useState({
     y: THREE.MathUtils.randFloatSpread(height * 2),
@@ -42,13 +42,12 @@ function Model({ index, z, speed }) {
     // if (data.y > height) data.y = -height;
   });
   return (
-    <mesh
-      ref={ref}
-      geometry={nodes.banana.geometry}
-      material={materials.skin}
-      material-emisive="orange"
-    />
-  );
+    <Detailed ref={ref} distances={[0, 65, 80]}>
+      <mesh geometry={nodes.banana_high.geometry} material={materials.skin} material-emissive="#ff9f00" />
+      <mesh geometry={nodes.banana_mid.geometry} material={materials.skin} material-emissive="#ff9f00" />
+      <mesh geometry={nodes.banana_low.geometry} material={materials.skin} material-emissive="#ff9f00" />
+    </Detailed>
+  )
 }
 
 export default function Banana({ speed = 1, count = 80, depth = 80, easing = (x) => Math.sqrt(1 - Math.pow(x - 1, 2)) }) {
