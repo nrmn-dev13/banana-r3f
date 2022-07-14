@@ -22,9 +22,9 @@ export const Container = styled.div`
   & h1 {
     padding: 0;
     margin: 0 0 0.05em 0;
-    font-family: 'Ayer Poster', serif;
+    font-family: 'Cormorant SC', serif;
     font-weight: 400;
-    font-size: min(18vw, 14em);
+    font-size: min(18vw, 6em);
     line-height: 0.85em;
   }
 `
