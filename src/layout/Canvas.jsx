@@ -43,26 +43,60 @@ function Model({ index, z, speed }) {
   });
   return (
     <Detailed ref={ref} distances={[0, 65, 80]}>
-      <mesh geometry={nodes.banana_high.geometry} material={materials.skin} material-emissive="#ff9f00" />
-      <mesh geometry={nodes.banana_mid.geometry} material={materials.skin} material-emissive="#ff9f00" />
-      <mesh geometry={nodes.banana_low.geometry} material={materials.skin} material-emissive="#ff9f00" />
+      <mesh
+        geometry={nodes.banana_high.geometry}
+        material={materials.skin}
+        material-emissive="#ff9f00"
+      />
+      <mesh
+        geometry={nodes.banana_mid.geometry}
+        material={materials.skin}
+        material-emissive="#ff9f00"
+      />
+      <mesh
+        geometry={nodes.banana_low.geometry}
+        material={materials.skin}
+        material-emissive="#ff9f00"
+      />
     </Detailed>
-  )
+  );
 }
 
-export default function Banana({ speed = 1, count = 80, depth = 80, easing = (x) => Math.sqrt(1 - Math.pow(x - 1, 2)) }) {
+export default function Banana({
+  speed = 1,
+  count = 80,
+  depth = 80,
+  easing = (x) => Math.sqrt(1 - Math.pow(x - 1, 2)),
+}) {
   return (
     // No need for antialias (faster), dpr clamps the resolution to 1.5 (also faster than full resolution)
-    <Canvas gl={{ antialias: false }} dpr={[1, 1.5]} camera={{ position: [0, 0, 10], fov: 20, near: 0.01, far: depth + 15 }}>
-      <color attach="background" args={['#ffbf40']} />
-      <spotLight position={[10, 20, 10]} penumbra={1} intensity={3} color="orange" />
+    <Canvas
+      gl={{ antialias: false }}
+      dpr={[1, 1.5]}
+      camera={{ position: [0, 0, 10], fov: 20, near: 0.01, far: depth + 15 }}
+    >
+      <color attach="background" args={["#ffbf40"]} />
+      <spotLight
+        position={[10, 20, 10]}
+        penumbra={1}
+        intensity={3}
+        color="orange"
+      />
       {/* Using cubic easing here to spread out objects a little more interestingly, i wanted a sole big object up front ... */}
-      {Array.from({ length: count }, (_, i) => <Model key={i} index={i} z={Math.round(easing(i / count) * depth)} speed={speed} /> /* prettier-ignore */)}
+      {Array.from(
+        { length: count },
+        (_, i) => <Model key={i} index={i} z={Math.round(easing(i / count) * depth)} speed={speed} /> /* prettier-ignore */
+      )}
       <Environment preset="sunset" />
       {/* Multisampling (MSAA) is WebGL2 antialeasing, we don't need it (faster) */}
       <EffectComposer multisampling={0}>
-        <DepthOfField target={[0, 0, 60]} focalLength={0.5} bokehScale={11} height={700} />
+        <DepthOfField
+          target={[0, 0, 60]}
+          focalLength={0.5}
+          bokehScale={11}
+          height={700}
+        />
       </EffectComposer>
     </Canvas>
-  )
+  );
 }
