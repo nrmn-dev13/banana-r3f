@@ -8,7 +8,7 @@ export default function Overlay() {
         <h1>
           NORMAN 
           <br />
-          RMDHN —
+          RAMADHAN —
         </h1>
         <p>Software Developer - Frontend</p>
       </TopLeft>
