@@ -41,6 +41,15 @@ export const BottomLeft = styled.div`
   left: 5vw;
   width: 30ch;
   max-width: 40%;
+  & .social-link {
+    margin: 0 5px 0 0;
+    &:first-child {
+      margin-left: 5px;
+    }
+    &:last-child {
+      margin: 0;
+    }
+  }
 `
 
 export const Hamburger = styled.div`
