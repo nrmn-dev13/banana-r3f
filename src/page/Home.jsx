@@ -1,8 +1,8 @@
 import { Container, TopLeft, BottomLeft, Hamburger } from "./../layout/styles";
 import { VelvetBanana } from "./../layout/VelvetBanana";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, } from '@fortawesome/free-solid-svg-icons'
-import { faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin, faInstagramSquare } from "@fortawesome/free-brands-svg-icons";
 
 export default function Overlay() {
   return (
@@ -16,10 +16,16 @@ export default function Overlay() {
         <p>Software Developer - Frontend</p>
       </TopLeft>
       <BottomLeft>
-        A runtime deconstruction of{" "}
-        <a href="https://playful.software">playful.software</a>
-        <FontAwesomeIcon icon={faEnvelope} />
-        <FontAwesomeIcon icon={faLinkedin} color="red" />
+        Get in Touch: 
+        <a className="social-link" href="mailto:normanramadhan3@gmail.com">
+          <FontAwesomeIcon icon={faEnvelope} />
+        </a>
+        <a className="social-link" href="https://www.instagram.com/normanrmdhn/">
+          <FontAwesomeIcon icon={faInstagramSquare} />
+        </a>
+        <a className="social-link" href="https://www.linkedin.com/in/nrmnramadhan/">
+          <FontAwesomeIcon icon={faLinkedin} />
+        </a>
       </BottomLeft>
       <Hamburger>
         <div />
@@ -30,4 +36,3 @@ export default function Overlay() {
     </Container>
   );
 }
-
