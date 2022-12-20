@@ -12,7 +12,7 @@ export default function Overlay() {
   return (
     <Container>
       <TopLeft>
-        <h1>
+        <h1 className="text-3xl font-bold underline">
           NORMAN
           <br />
           RAMADHAN —
