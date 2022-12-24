@@ -48,11 +48,11 @@ export default function Overlay() {
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
       </BottomLeft>
-      <Hamburger>
+      {/* <Hamburger>
         <div />
         <div />
         <div />
-      </Hamburger>
+      </Hamburger> */}
       <VelvetBanana />
     </Container>
   );
