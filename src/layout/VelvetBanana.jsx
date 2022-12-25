@@ -7,6 +7,7 @@ export const Image = styled.svg`
   transform: translate3d(-50%, -50%, 0) rotate(0deg);
   width: 75%;
   height: 75%;
+  pointer-events: none;
   & g.skin {
     cursor: pointer;
   }
