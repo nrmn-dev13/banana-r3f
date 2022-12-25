@@ -1,4 +1,4 @@
-import { Container, TopLeft, BottomLeft, Hamburger } from "./../layout/styles";
+import { Container, TopLeft, BottomLeft } from "./../layout/styles";
 import { VelvetBanana } from "./../layout/VelvetBanana";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -12,7 +12,7 @@ export default function Overlay() {
   return (
     <Container>
       <TopLeft>
-        <h1 className="text-3xl font-bold underline">
+        <h1>
           NORMAN
           <br />
           RAMADHAN —

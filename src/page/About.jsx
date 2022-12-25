@@ -1,8 +1,16 @@
+import { Container, TopLeft, BottomLeft } from "./../layout/styles";
+
 const About = () => {
   return (
-    <section>
-      <h1>The About Page</h1>
-    </section>
+    <Container>
+      <TopLeft>
+        <h1>
+          ABOUT
+          <br />
+          ME —
+        </h1>
+      </TopLeft>
+    </Container>
   );
 };
 

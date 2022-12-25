@@ -56,3 +56,9 @@ input[type='range']::-webkit-slider-thumb {
 input[type='range']::-webkit-slider-thumb:active {
   transform: scale(1);
 }
+
+@layer components {
+  .title {
+    @apply p-0 m-0 mb-2 font-normal leading-3
+  }
+}
