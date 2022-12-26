@@ -18,7 +18,7 @@ export default function App() {
           <FadeIn />
         </Suspense>
       </div>
-      <main className="relatice z-10 flex-auto container mx-auto">
+      <main className="relative z-10 flex-auto container mx-auto">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
