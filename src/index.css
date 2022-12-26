@@ -1,5 +1,8 @@
 @import url('https://rsms.me/inter/inter.css');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   box-sizing: border-box;
@@ -12,11 +15,19 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: scroll;
 }
 
 body {
   background: #ffd863;
 }
+
+/* #root {
+  height: 100vh;
+} */
 
 a {
   color: black;
@@ -45,4 +56,10 @@ input[type='range']::-webkit-slider-thumb {
 
 input[type='range']::-webkit-slider-thumb:active {
   transform: scale(1);
+}
+
+@layer components {
+  .title {
+    @apply p-0 m-0 mb-2 font-normal leading-3
+  }
 }

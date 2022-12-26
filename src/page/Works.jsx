@@ -1,8 +1,22 @@
+import { Container } from "./../layout/styles";
+import WorksList from "../components/WorksList";
+
 const Works = () => {
   return (
-    <section>
-      <h1>The Works Page</h1>
-    </section>
+    <>
+      <section>
+        <Container>
+          <h1>
+            WORKS
+            <br />
+            XYZ —
+          </h1>
+        </Container>
+      </section>
+      <section className="mt-10 mb-10">
+        <WorksList/>
+      </section>
+    </>
   );
 };
 
