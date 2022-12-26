@@ -1,6 +1,6 @@
 import { Container } from "./../layout/styles";
 import WorksList from "../components/WorksList";
-import ciindi from "../assets/ciindi.png";
+
 const Works = () => {
   return (
     <>
@@ -13,7 +13,7 @@ const Works = () => {
           </h1>
         </Container>
       </section>
-      <section>
+      <section className="mt-10 mb-10">
         <WorksList/>
       </section>
     </>

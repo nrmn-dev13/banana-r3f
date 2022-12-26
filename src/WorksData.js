@@ -1,4 +1,3 @@
-import ciindi from "./assets/ciindi.png";
 import venuerific from "./assets/venuerific.png";
 import one4trader from "./assets/one4trader.png";
 import klikkapal from "./assets/klikkapal.png";
@@ -7,34 +6,25 @@ const WorksData = [
   {
     id: 'w1',
     title: 'Venuerific',
-    description: 'This is Venuerific',
+    description: 'A marketplace to rent venue for birthday party, after prom, company event and etc',
     tech: 'HTML, CSS, Javascript',
-    link: 'https://www.venuerific.com/id',
+    link: 'https://www.venuerific.com',
     img: venuerific,
     type: 'Works'
   },
   {
     id: 'w2',
-    title: 'Ciindi',
-    description: 'This is Ciindi',
-    tech: 'HTML, CSS, Javascript',
-    link: 'https://ciindi.com/',
-    img: ciindi,
-    type: 'Works'
-  },
-  {
-    id: 'w3',
     title: 'Klik Kapal Indonesia',
-    description: 'This is KlikKapal',
+    description: 'A platform for both ship owner and cargo owner to meet and work together seamlessly',
     tech: 'HTML, CSS, Javascript',
     link: null,
     img: klikkapal,
     type: 'Works'
   },
   {
-    id: 'w4',
+    id: 'w3',
     title: 'One4trader',
-    description: 'One4trader',
+    description: 'A social media app for forex trading',
     tech: 'HTML, CSS, Javascript',
     link: null,
     img: one4trader,

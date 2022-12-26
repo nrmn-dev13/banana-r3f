@@ -34,11 +34,6 @@ export default function Overlay() {
         </div>
         Inspired by: https://playful.software/
       </BottomLeft>
-      {/* <Hamburger>
-        <div />
-        <div />
-        <div />
-      </Hamburger> */}
       <VelvetBanana />
     </Container>
   );
