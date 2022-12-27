@@ -38,7 +38,7 @@ export const TopLeft = styled.div`
 export const BottomLeft = styled.div`
   position: absolute;
   bottom: 5vw;
-  left: 0;
+  left: 16px;
   width: 30ch;
   max-width: 40%;
   & .social-link {
