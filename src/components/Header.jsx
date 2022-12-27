@@ -6,10 +6,11 @@ const Header = () => {
   };
   return (
     <header className="w-full relative z-10">
-      <nav className="flex justify-end container mx-auto bg-transparent">
+      <nav className="flex justify-end container mx-auto px-4 bg-transparent">
         <ul className="flex p-3">
           <li className="ml-0 mx-2 font-secondary">
             <NavLink
+              className="hover:text-white"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
               to="/"
             >
@@ -18,6 +19,7 @@ const Header = () => {
           </li>
           <li className="mx-2 font-secondary">
             <NavLink
+              className="hover:text-white"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
               to="/about"
             >
@@ -26,6 +28,7 @@ const Header = () => {
           </li>
           <li className="mx-2 mr-0 font-secondary">
             <NavLink
+              className="hover:text-white"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
               to="/works"
             >

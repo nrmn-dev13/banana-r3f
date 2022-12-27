@@ -1,10 +1,10 @@
 const WorksItems = (props) => {
   return (
-    <div className="lg:columns-3">
+    <div className="grid lg:grid-cols-3 gap-4">
       {props.items.map((item) => (
         <div
           key={item.id}
-          className="rounded-xl border-[#ffd863] bg-[#ffd863] overflow-hidden"
+          className="rounded-xl border-[#ffd863] bg-[#ffd863] overflow-hidden w-full"
         >
           <figure>
             <img src={item.img} alt="" />
@@ -15,9 +15,9 @@ const WorksItems = (props) => {
             <h4 className="mb-2">{item.description}</h4>
             {/* <h4>{item.tech}</h4> */}
             {item.link === null ? (
-              <p>Unavailable</p>
+              <p className="rounded-full p-2 flex items-center justify-center mx-auto max-w-[50%] w-full pointer-events-none">Unavailable</p>
             ) : (
-              <a href={item.link}>Visit</a>
+              <a className="rounded-full p-2 flex items-center justify-center mx-auto border-[#ffffff] border-2 max-w-[50%] w-full hover:bg-white hover:duration-300" href={item.link}>Visit</a>
             )}
           </div>
         </div>

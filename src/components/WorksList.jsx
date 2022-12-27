@@ -5,7 +5,7 @@ import { useState } from "react";
 const WorksList = () => {
   const [setWorks] = useState(WorksData)
   return (
-    <div>
+    <div className="container mx-auto">
       <WorksItems items={setWorks}/>
     </div>
   );
