@@ -1,6 +1,6 @@
 const WorksItems = (props) => {
   return (
-    <div className="grid lg:grid-cols-3 gap-4">
+    <div className="lg:columns-3">
       {props.items.map((item) => (
         <div
           key={item.id}
