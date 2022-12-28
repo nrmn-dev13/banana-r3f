@@ -39,7 +39,8 @@ export const BottomLeft = styled.div`
   position: absolute;
   bottom: 5vw;
   left: 16px;
-  width: 100%;
+  right: 16px;
+  width: calc(100% - 32px);
   max-width: 100%;
   & .social-link {
     margin: 0 5px 0 0;
