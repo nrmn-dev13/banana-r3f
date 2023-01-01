@@ -19,16 +19,14 @@ const About = () => {
             <img src={avatar} alt="avatar" />
           </figure>
           <div>
-            <p>
+            <p className="text-xl">
               Hello my name is Norman and I've been a Frontend Developer for
-              about four years. 
-            </p>
-            <p>
-              My past projects mostly do some revamp website and slicing form design to web
+              about four years. My past projects mostly do some revamp website and slicing form design to web
               pages, and currently I'm working with Vue.js using micro
               frontend architecture and Jest for unit testing.
             </p>
-            <p>
+            <br />
+            <p className="text-xl">
               Skills: HTML, CSS, Javascript, Vue.js, Jquery, Bootstrap,
               Tailwind, Jest.{" "}
             </p>
