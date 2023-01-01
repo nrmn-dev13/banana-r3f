@@ -1,5 +1,6 @@
 @import url('https://rsms.me/inter/inter.css');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=NTR&display=swap'); 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,6 +20,7 @@ body,
   flex-direction: column;
   min-height: -webkit-fill-available;
   overflow: auto;
+  font-family: 'NTR', sans-serif;
 }
 
 body {

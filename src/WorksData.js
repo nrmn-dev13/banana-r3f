@@ -6,7 +6,7 @@ const WorksData = [
   {
     id: 'w1',
     title: 'Venuerific',
-    description: 'A marketplace to rent venue for birthday party, after prom, company event and etc',
+    description: 'A marketplace to rent venue for birthday party, after prom, company event and etc.',
     tech: 'HTML, CSS, Javascript',
     link: 'https://www.venuerific.com',
     img: venuerific,
@@ -15,7 +15,7 @@ const WorksData = [
   {
     id: 'w2',
     title: 'Klik Kapal Indonesia',
-    description: 'A platform for both ship owner and cargo owner to meet and work together seamlessly',
+    description: 'A platform for both ship owner and cargo owner to meet and work together seamlessly.',
     tech: 'HTML, CSS, Javascript',
     link: null,
     img: klikkapal,
@@ -24,7 +24,7 @@ const WorksData = [
   {
     id: 'w3',
     title: 'One4trader',
-    description: 'A social media app for forex trading',
+    description: 'A social media app for forex trading.',
     tech: 'HTML, CSS, Javascript',
     link: null,
     img: one4trader,

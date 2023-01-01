@@ -10,7 +10,7 @@ const Header = () => {
         <ul className="flex p-3">
           <li className="ml-0 mx-2 font-secondary">
             <NavLink
-              className="hover:text-white"
+              className="text-xl hover:text-white"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
               to="/"
             >
@@ -19,7 +19,7 @@ const Header = () => {
           </li>
           <li className="mx-2 font-secondary">
             <NavLink
-              className="hover:text-white"
+              className="text-xl hover:text-white"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
               to="/about"
             >
@@ -28,7 +28,7 @@ const Header = () => {
           </li>
           <li className="mx-2 mr-0 font-secondary">
             <NavLink
-              className="hover:text-white"
+              className="text-xl hover:text-white"
               style={({ isActive }) => (isActive ? activeStyle : undefined)}
               to="/works"
             >

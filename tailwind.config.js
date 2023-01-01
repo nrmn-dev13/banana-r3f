@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     fontFamily: {
       'primary': ['Cormorant SC', 'serif'],
-      'secondary': ['Inter', 'sans-serif'],
+      'secondary': ['NTR', 'sans-serif'],
     },
     extend: {},
   },
