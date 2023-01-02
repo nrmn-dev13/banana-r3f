@@ -1,10 +1,16 @@
 import { Container } from "./../layout/styles";
 import WorksList from "../components/WorksList";
+import { motion as m } from "framer-motion";
 
 const Works = () => {
   return (
     <>
-      <section>
+      <m.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.75, ease: "easeOut" }}
+        exit={{ opacity: 0 }}
+      >
         <Container>
           <h1>
             WORKS
@@ -12,10 +18,15 @@ const Works = () => {
             XYZ —
           </h1>
         </Container>
-      </section>
-      <section className="mt-10 mb-10">
+      </m.section>
+      <m.section 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.75, ease: "easeOut"}}
+      exit={{ opacity: 0 }}
+      className="mt-10 mb-10">
         <WorksList/>
-      </section>
+      </m.section>
     </>
   );
 };

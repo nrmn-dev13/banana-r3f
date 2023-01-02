@@ -5,6 +5,7 @@ import Home from "./page/Home";
 import About from "./page/About";
 import Works from "./page/Works";
 import Header from "./components/Header";
+import AnimatedRoutes from "./components/AnimatedRoutes";
 import { FadeIn, LeftMiddle } from "./layout/styles";
 
 export default function App() {
@@ -19,11 +20,7 @@ export default function App() {
         </Suspense>
       </div>
       <main className="relative z-10 flex-auto container mx-auto px-4">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/works" element={<Works />} />
-        </Routes>
+        <AnimatedRoutes />
         {/* <Home /> */}
         {/* <LeftMiddle>
         <input type="range" min="0" max="10" value={speed} step="1" onChange={(e) => set(e.target.value)} />
