@@ -3,10 +3,16 @@ import { VelvetBanana } from "./../layout/VelvetBanana";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { motion as m } from "framer-motion";
 
 export default function Overlay() {
   return (
-    <section>
+    <m.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.75, ease: "easeOut" }}
+      exit={{ opacity: 0 }}
+    >
       <Container>
         <h1>
           NRMN
@@ -37,6 +43,6 @@ export default function Overlay() {
         </BottomLeft>
         <VelvetBanana />
       </Container>
-    </section>
+    </m.section>
   );
 }
