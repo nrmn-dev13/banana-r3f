@@ -1,15 +1,15 @@
-import { Route, Routes } from "react-router-dom";
 import { Suspense, useState } from "react";
 import Canvas from "./layout/Canvas";
-import Home from "./page/Home";
-import About from "./page/About";
-import Works from "./page/Works";
 import Header from "./components/Header";
 import AnimatedRoutes from "./components/AnimatedRoutes";
 import { FadeIn, LeftMiddle } from "./layout/styles";
+import { useLocation } from "react-router-dom";
+import { motion as m } from "framer-motion";
 
 export default function App() {
   const [speed, set] = useState(1);
+  const location = useLocation();
+  console.log(typeof location.pathname);
   return (
     <>
       <Header />
@@ -22,9 +22,25 @@ export default function App() {
       <main className="relative z-10 flex-auto container mx-auto px-4">
         <AnimatedRoutes />
         {/* <Home /> */}
-        {/* <LeftMiddle>
-        <input type="range" min="0" max="10" value={speed} step="1" onChange={(e) => set(e.target.value)} />
-      </LeftMiddle> */}
+        {location.pathname === "/" ? (
+          <m.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            exit={{ opacity: 0 }}
+          >
+            <LeftMiddle>
+              <input
+                type="range"
+                min="0"
+                max="10"
+                value={speed}
+                step="1"
+                onChange={(e) => set(e.target.value)}
+              />
+            </LeftMiddle>
+          </m.div>
+        ) : null}
       </main>
     </>
   );
