@@ -13,7 +13,7 @@ export default function App() {
   return (
     <>
       <Header />
-      <div className="absolute top-0 left-0 right-0 bottom-0 z-0">
+      <div className="fixed top-0 left-0 right-0 bottom-0 z-0">
         <Suspense fallback={null}>
           <Canvas speed={speed} />
           <FadeIn />
