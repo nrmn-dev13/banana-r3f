@@ -43,6 +43,8 @@ const About = () => {
               Skills: HTML, CSS, Javascript, Vue.js, Jquery, Bootstrap,
               Tailwind, Jest.{" "}
             </p>
+            <br />
+            <a className="rounded bg-[#ffd863] leading-4 py-1 px-2 border-[#333333] border-2 text-black transition-all hover:text-white hover:transition-all hover:bg-[#333333]" href="https://drive.google.com/file/d/1NunuqOvFdG2Q99UuTlT7FoIsiJXtNjDx/view?usp=sharing" target="_blank">Download CV</a>
           </div>
         </div>
       </m.section>
