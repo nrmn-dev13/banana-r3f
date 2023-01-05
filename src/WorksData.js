@@ -44,7 +44,7 @@ const WorksData = [
   {
     id: 'w5',
     title: 'Three.js Ragging Sea',
-    description: 'Experiment loading 3d model and create wave using shaders.',
+    description: 'Implement 3d model and create wave using shaders.',
     tech: 'HTML, CSS, Javascript, Three.js, Webpack',
     link: 'https://nrmn-dev13.github.io/ragging_sea/',
     img: posseidon,
