@@ -8,7 +8,7 @@ const WorksData = [
   {
     id: 'w1',
     title: 'Personal Website',
-    description: 'My minimalist personal website.',
+    description: 'My minimalist personal website using Vite, React Three Fiber, Tailwind, and Framer Motion.',
     tech: 'HTML, CSS, Javascript, React, R3f, Framer Motion, Vite',
     link: 'https://nrmn.xyz/',
     img: nrmn,

@@ -43,9 +43,20 @@ const About = () => {
               Skills: HTML, CSS, Javascript, Vue.js, Jquery, Bootstrap,
               Tailwind, Jest.{" "}
             </p>
+            <br />
+            <a className="rounded bg-[#ffd863] leading-4 py-1 px-2 border-[#333333] border-2 text-black transition-all hover:text-white hover:transition-all hover:bg-[#333333]" href="https://drive.google.com/file/d/1NunuqOvFdG2Q99UuTlT7FoIsiJXtNjDx/view?usp=sharing" target="_blank">Download CV</a>
           </div>
         </div>
       </m.section>
+      {/* <m.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5, ease: "easeOut" }} 
+      exit={{ opacity: 0 }}
+      className="flex-auto items-center mt-10"
+      >
+        <a href="https://drive.google.com/file/d/1NunuqOvFdG2Q99UuTlT7FoIsiJXtNjDx/view?usp=sharing" target="_blank">Download</a>
+      </m.section> */}
     </>
   );
 };
