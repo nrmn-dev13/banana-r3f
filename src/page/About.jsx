@@ -46,6 +46,15 @@ const About = () => {
           </div>
         </div>
       </m.section>
+      {/* <m.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5, ease: "easeOut" }} 
+      exit={{ opacity: 0 }}
+      className="flex-auto items-center mt-10"
+      >
+        <a href="https://drive.google.com/file/d/1NunuqOvFdG2Q99UuTlT7FoIsiJXtNjDx/view?usp=sharing" target="_blank">Download</a>
+      </m.section> */}
     </>
   );
 };
