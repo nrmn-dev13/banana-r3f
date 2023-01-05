@@ -32,19 +32,19 @@ const WorksData = [
     img: klikkapal,
     type: 'Works'
   },
+  // {
+  //   id: 'w4',
+  //   title: 'One4trader',
+  //   description: 'A social media app for forex trading.',
+  //   tech: 'HTML, CSS, Javascript',
+  //   link: null,
+  //   img: one4trader,
+  //   type: 'Works'
+  // },
   {
     id: 'w4',
-    title: 'One4trader',
-    description: 'A social media app for forex trading.',
-    tech: 'HTML, CSS, Javascript',
-    link: null,
-    img: one4trader,
-    type: 'Works'
-  },
-  {
-    id: 'w5',
     title: 'Three.js Ragging Sea',
-    description: 'Experiment loading 3d model and create wave using shaders.',
+    description: 'Implement 3d model and create wave using shaders.',
     tech: 'HTML, CSS, Javascript, Three.js, Webpack',
     link: 'https://nrmn-dev13.github.io/ragging_sea/',
     img: posseidon,
