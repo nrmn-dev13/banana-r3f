@@ -17,7 +17,7 @@ const WorksData = [
   {
     id: 'w2',
     title: 'Venuerific',
-    description: 'A marketplace to rent venue for birthday party, after prom, company event and etc.',
+    description: 'Revamp for V.2 and create new feature to improve accessibility and user experience.',
     tech: 'HTML, CSS, Javascript',
     link: 'https://www.venuerific.com',
     img: venuerific,
@@ -26,7 +26,7 @@ const WorksData = [
   {
     id: 'w3',
     title: 'Klik Kapal Indonesia',
-    description: 'A platform for both ship owner and cargo owner to meet and work together seamlessly.',
+    description: 'Transform design into web page and ensuring web page is responsive for mobile devices.',
     tech: 'HTML, CSS, Javascript',
     link: null,
     img: klikkapal,
