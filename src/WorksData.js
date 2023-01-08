@@ -26,7 +26,7 @@ const WorksData = [
   {
     id: 'w3',
     title: 'Klik Kapal Indonesia',
-    description: 'Transform design into web page and ensuring web page is responsive for mobile devices.',
+    description: 'Transform from design into web page and ensure responsive for desktop and mobile device.',
     tech: 'HTML, CSS, Javascript',
     link: null,
     img: klikkapal,
