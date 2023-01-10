@@ -9,7 +9,6 @@ import { motion as m } from "framer-motion";
 export default function App() {
   const [speed, set] = useState(1);
   const location = useLocation();
-  console.log(typeof location.pathname);
   return (
     <>
       <Header />
