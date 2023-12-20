@@ -44,7 +44,7 @@ const About = () => {
               Tailwind, Jest.{" "}
             </p>
             <br />
-            <a className="rounded bg-[#ffd863] leading-4 py-1 px-2 border-[#000000] border-2 text-black transition-all hover:text-white hover:transition-all hover:bg-[#333333] hover:border-[#333333]" href="https://drive.google.com/file/d/1tBOoRGyPvrzISGfM_Hm1opYF--OM7AKp/view?usp=sharing" target="_blank">Download CV</a>
+            <a className="rounded bg-[#ffd863] leading-4 py-1 px-2 border-[#000000] border-2 text-black transition-all hover:text-white hover:transition-all hover:bg-[#333333] hover:border-[#333333]" href="https://drive.google.com/file/d/1pmarR6o7CoGNfcseVP07R1EBTD9B7x6K/view?usp=sharing" target="_blank">Download CV</a>
           </div>
         </div>
       </m.section>
