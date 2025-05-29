@@ -3,6 +3,7 @@ import one4trader from "./assets/one4trader.png";
 import klikkapal from "./assets/klikkapal.png";
 import nrmn from "./assets/nrmn.png";
 import posseidon from "./assets/posseidon.png";
+import neo from "./assets/neo.png";
 
 const WorksData = [
   {
@@ -48,6 +49,15 @@ const WorksData = [
     tech: 'HTML, CSS, Javascript, Three.js, Webpack',
     link: 'https://nrmn-dev13.github.io/ragging_sea/',
     img: posseidon,
+    type: 'Experiment'
+  },
+  {
+    id: 'w5',
+    title: 'Neo Brutalism Ecommerce',
+    description: 'Implement Neo Brutalism style using https://www.neobrutalism.dev/.',
+    tech: 'Next.JS Tailwind, Shadcn UI',
+    link: 'https://neo-brutalism-ecommerce.vercel.app/',
+    img: neo,
     type: 'Experiment'
   }
 ]
