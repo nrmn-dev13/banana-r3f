@@ -8,7 +8,7 @@ function Model({ index, z, speed }) {
   const ref = useRef();
   const { viewport, camera } = useThree();
   const { width, height } = viewport.getCurrentViewport(camera, [0, 0, -z]);
-  const { nodes, materials } = useGLTF("/banana-v1-transformed.glb");
+  const { nodes, materials } = useGLTF(`${import.meta.env.BASE_URL}banana-v1-transformed.glb`);
 
   const [data] = useState({
     y: THREE.MathUtils.randFloatSpread(height * 2),
